@@ -15,7 +15,6 @@ const GetTodos = async (req, res) => {
 
 const AddTodo = async (req, res) => {
     const { value } = req.body
-    console.log(req.body)
 
     if (!value) {
         res.status(400).json({ message: "All fields are required..." })
